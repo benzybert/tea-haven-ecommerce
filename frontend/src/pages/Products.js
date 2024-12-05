@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Products = () => {
+<<<<<<< HEAD
   const products = [
     {
       id: 1,
@@ -45,6 +46,20 @@ const Products = () => {
       </div>
     </div>
   );
+=======
+    const product = {
+        image: 'path/to/your/image.jpg' // Replace with your actual image path
+    };
+
+    return (
+        <div className="container mx-auto p-4">
+            <div className="h-48 bg-cover bg-center rounded-md mb-4" 
+                     style={{backgroundImage: `url(${product.image})`}}>
+            </div>
+            Products Page
+        </div>
+    );
+>>>>>>> f6b54fc (Add product images and enhance Products page layout with background image)
 };
 
 export default Products;
