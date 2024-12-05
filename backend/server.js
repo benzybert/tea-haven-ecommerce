@@ -17,7 +17,9 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log('MongoDB Connected'))
 .catch(err => console.log(err));
 
-// Routes will be added here
+// Routes
+const teaRoutes = require('./routes/teaRoutes');
+app.use('/api/teas', teaRoutes);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
