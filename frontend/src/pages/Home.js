@@ -1,10 +1,6 @@
 // Home.js
 import React from 'react';
-<<<<<<< HEAD
-import '../styles/Home.css';
-=======
 import './styles/Home.css';
->>>>>>> be95dbe (Enhance Home page with a gradient background and updated hero section. Add features section to highlight key offerings. Clean up Products page by removing unused code.)
 import { Link } from 'react-router-dom';
 
 const Home = () => {
