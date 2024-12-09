@@ -1,11 +1,1 @@
-import React from 'react';
-
-const TestPush = () => {
-  return (
-    <div className="text-center p-4">
-      <h1>Test Push Successful!</h1>
-    </div>
-  );
-};
-
-export default TestPush;
+aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKCmNvbnN0IFRlc3RQdXNoID0gKCkgPT4gewogIHJldHVybiAoCiAgICA8ZGl2IGNsYXNzTmFtZT0idGV4dC1jZW50ZXIgcC00Ij4KICAgICAgPGgxPlRlc3QgUHVzaCBTdWNjZXNzZnVsITwvaDE+CiAgICA8L2Rpdj4KICB9Owp9OwoKZXhwb3J0IGRlZmF1bHQgVGVzdFB1c2g7
