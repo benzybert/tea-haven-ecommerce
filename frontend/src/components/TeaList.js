@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const TeaList = () => {
-<<<<<<< HEAD
   const [teas, setTeas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -35,41 +35,6 @@ const TeaList = () => {
   if (error) return (
     <div className="text-center text-red-600 p-4">{error}</div>
   );
-=======
-  const [filter, setFilter] = useState('all');
-  
-  // Static tea data
-  const teas = [
-    {
-      id: 1,
-      title: "Japanese Sencha",
-      type: "green",
-      price: 24.99,
-      description: "Premium green tea with a delicate, grassy sweet flavor",
-      image: "/images/tea-placeholder.jpg"
-    },
-    {
-      id: 2,
-      title: "English Breakfast",
-      type: "black",
-      price: 19.99,
-      description: "Classic black tea blend, full-bodied with a robust flavor",
-      image: "/images/tea-placeholder.jpg"
-    },
-    {
-      id: 3,
-      title: "Chamomile Dream",
-      type: "herbal",
-      price: 18.99,
-      description: "Soothing herbal tea with sweet, floral notes",
-      image: "/images/tea-placeholder.jpg"
-    }
-  ];
-
-  const filteredTeas = filter === 'all' 
-    ? teas 
-    : teas.filter(tea => tea.type === filter);
->>>>>>> 54145ad (Refactor TeaList component to use static data, implement filtering by tea type, and enhance UI with improved layout and styling)
 
   return (
     <div className="bg-gray-50 min-h-screen py-8">
@@ -103,12 +68,9 @@ const TeaList = () => {
                   src={tea.image} 
                   alt={tea.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-<<<<<<< HEAD
                   onError={(e) => {
                     e.target.src = '/images/tea-placeholder.jpg';
                   }}
-=======
->>>>>>> 54145ad (Refactor TeaList component to use static data, implement filtering by tea type, and enhance UI with improved layout and styling)
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-30 transition-all"></div>
                 <div className="absolute top-4 right-4 bg-white bg-opacity-90 px-3 py-1 rounded-full text-green-600 font-semibold">
@@ -119,20 +81,12 @@ const TeaList = () => {
               <div className="p-6">
                 <div className="mb-4">
                   <h2 className="text-xl font-bold mb-2 text-gray-800">{tea.title}</h2>
-<<<<<<< HEAD
                   <p className="text-gray-600 text-sm line-clamp-2">{tea.description || 'Delicious premium tea'}</p>
-=======
-                  <p className="text-gray-600 text-sm line-clamp-2">{tea.description}</p>
->>>>>>> 54145ad (Refactor TeaList component to use static data, implement filtering by tea type, and enhance UI with improved layout and styling)
                 </div>
                 
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-green-600 font-medium">
-<<<<<<< HEAD
                     {tea.type || 'Classic Blend'}
-=======
-                    {tea.type.charAt(0).toUpperCase() + tea.type.slice(1)}
->>>>>>> 54145ad (Refactor TeaList component to use static data, implement filtering by tea type, and enhance UI with improved layout and styling)
                   </span>
                   <button 
                     className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 
