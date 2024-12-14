@@ -1,7 +1,8 @@
-const mongoose = require('mongoose');
-const { mongoUri } = require('./config');
+const mongoose = require('mongoose'); 
+const { mongoUri } = require('./config'); 
 
-const connectDB = async () => {
+// this function is used to connect to the MongoDB database using the mongoose library.
+const connectDB = async () => {    
   try {
     await mongoose.connect(mongoUri, {
       useNewUrlParser: true,
