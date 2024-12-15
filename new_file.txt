@@ -1,5 +1,1 @@
-
-{
-  "content": "This is a new file added by the AI assistant.",
-  "encoding": "utf-8"
-}
+This is a new file added by the AI assistant.
