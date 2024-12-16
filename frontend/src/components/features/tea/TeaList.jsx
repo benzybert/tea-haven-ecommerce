@@ -1,6 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+/*
+    This component displays a list of teas. The teas are fetched from the backend
+    using an API call. The teas are displayed in a grid format with an image, title,
+    description, price, and type. The user can filter the teas by type using the buttons
+    at the top of the page.
+*/
+
 const TeaList = () => {
   const [teas, setTeas] = useState([]);
   const [loading, setLoading] = useState(true);
