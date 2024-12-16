@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import { fetchAllTeas } from '../api/teaApi';
 
+/*
+    This hook fetches all the teas from the backend and returns the teas,
+    loading state, and error state. The hook uses the fetchAllTeas function
+    from the teaApi file to make the API call to the backend. The hook is used
+    in the TeaList component to fetch the teas when the component mounts.
+*/
 export const useTeas = () => {
     const [teas, setTeas] = useState([]);
     const [loading, setLoading] = useState(true);

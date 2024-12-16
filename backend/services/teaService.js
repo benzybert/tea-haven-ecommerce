@@ -1,4 +1,7 @@
 // backend/services/teaService.js
+// This service will handle the logic for fetching tea data. It will use 
+// the data from the teas.json file to return the required data to the controller.
+
 const teas = require('../data/teas.json');
 
 class TeaService {
